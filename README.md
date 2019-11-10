@@ -6,35 +6,18 @@ Currently supported functionalities:
 + pulse shaping (RRC, SRRC, Gaussian, ...);  
 + QAM modulation (BPSK, QPSK, 8QAM, 16QAM, 32QAM, 64QAM, 128QAM, 256QAM, 512QAM);  
 + Probabilistic Shaping;  
-+ Electronic subcarrier multiplexing;  
-+ Emulation of DAC and ADC impairments (bit precision, bandwidth, clipping, timing skew, ...);
 + Emulation of laser phase and intensity noise;
 + matched filtering (SRRC);  
-+ clock recovery (only for QPSK so far);  
-+ optical frontend compensation (deskew, orthonormalization, DC removal, ...);  
-+ adaptive linear equalization (CMA, LMS, RDE, ...);  
-+ frequency offset estimation and removal;  
 + carrier phase estimation and removal (Viterbi&Viterbi, blind-phase search, maximum likelihood, decision-directed, data-aided, ...);  
 + signal demodulation and decision (BER, SER, EVM, MSE, MI, ...);
-
-
-For simpler use of the implemented DSP subsystems, several DSP sets are provided, ready for use in: 
-
-+ single-carrier and multi-subcarrier transmission;
-+ optical B2B applications (simulation and experimental);  
-+ fiber propagation applications (simulation and experimental);  
-+ ideal simulation setups.
 
 
 In addition, the library also includes a set of functions to perform general purpose DSP operations such as:  
 
 + low-pass/band-pass filtering (frequency-domain);  
-+ FFT block processing (overlap-and-save, overlap-and-add);  
 + digital resampling;  
 + synchronization of Tx and Rx signals;  
-+ digital monitoring of signal impairments (estimation of OSNR, chromatic dispersion, PMD ...);
 + conversion between performance metrics (BER, SNR, MI, ...);
-+ estimation of maximum reach with linear and nonlinear impairments (requires to supply external EGN data).
 
 
 ## How to Use the OptDSP Library ##
